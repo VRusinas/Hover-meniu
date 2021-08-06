@@ -6,7 +6,7 @@ box-sizing: border-box;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 body{
   background: #212121f2;
-  font-family:  'Montserrat', sans-serif;
+  font-family:'Montserrat', sans-serif;
   font-size: 23px;
   text-transform: uppercase;
   line-height: 80px;
@@ -23,6 +23,9 @@ body::-webkit-scrollbar-thumb {
 a{
   text-decoration: none;
   color:#dfdddd;
+}
+a:hover{
+  color:#f8f8f8;
 }
 div.box{
   width: 300px;
