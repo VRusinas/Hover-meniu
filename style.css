@@ -12,8 +12,7 @@ body{
   line-height: 80px;
   text-align: center;
 }
-
- body::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 10px;
 }
 body::-webkit-scrollbar-thumb {
@@ -21,26 +20,25 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 1px solid black;
 }
-
 a{
   text-decoration: none;
   color:#dfdddd;
+}
+div.box{
+  width: 300px;
+  height:100px;
+  margin:0 auto;
 }
 .container {
 overflow: hidden;
 margin:26vh auto;
 min-width: 200px;
- /* border: 5px solid white; */
 }
 .relative {
 position: relative;
-margin: 0 auto;
-width: 300px;
-height: 100px;
-
 }
-
-p::after {
+/* Mažasis blokas */
+a::after {
 content: "";
 position: absolute;
 width: 0px;
@@ -52,21 +50,18 @@ transition-delay: 0.3s;
 }
 .home:hover::after {
   width:68px;
-
 }
 .about:hover::after {
   width:79px;
-
 }
 .contact:hover::after {
   width:108px;
-
 }
 .faq:hover::after {
   width:46px;
 }
-
-p::before {
+/* Didysis blokas */
+a::before {
 content: "";
 position: absolute;
 width:100px;
@@ -75,18 +70,18 @@ background:#e53030;
 transform: translateX(-100px)translateY(25px);
 transition: 0.35s ease;
 }
-
  .bef:hover::before {
    transform: translateX(110px)translateY(25px);
    overflow: hidden;
-
  }
+ /* div kuris slepia blokus transisionams */
  .hide{
    width: 200px;
    height: 50px;
    display:inline-block;
    background: #2c2c2c;
  }
+ /* div pozicijos už kurių paslėpti blokeliai naudojami transitionams */
  .pbg{
      transform: translateX(-133px)translateY(-150px);
  }
